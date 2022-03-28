@@ -3,12 +3,13 @@ class ItemsController < ApplicationController
     @items = Item.all
   end
 
-  def show
-  end
-
   def new
+    @items = Item.new
   end
 
-  def edit
+  def create
+    item = Item.create(params.require(:item).permit(:name, :price))
+
+    redirect_to items_path
   end
 end
