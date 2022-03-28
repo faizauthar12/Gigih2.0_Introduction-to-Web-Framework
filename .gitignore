@@ -36,3 +36,6 @@
 
 # Ignore Gemfile.lock
 *.lock
+
+# Ignore console history
+_history
