@@ -12,6 +12,7 @@
         <td><%= item.name %></td>
         <td><%= item.price %></td>
         <td><%= link_to "Show", item %></td>
+        <td><%= button_to "Delete", item, :method => :delete %></td>
       </tr>
     <% end %>
   </tbody>
